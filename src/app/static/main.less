@@ -1,4 +1,5 @@
 @import url("./header/_header.less");
+@import url("./content/_main_content.less");
 
 @font-face {
   font-family: 'Proxima Nova Regular';
@@ -6,6 +7,24 @@
   src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
   url('../fonts/ProximaNova-Regular.woff') format('woff'),
   url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Thin';
+  src: url('../fonts/ProximaNovaT-Thin.eot');
+  src: url('../fonts/ProximaNovaT-Thin.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNovaT-Thin.woff') format('woff'),
+  url('../fonts/ProximaNovaT-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Forever Brush Script';
+  src: url('../fonts/Forever_Brush_Script_Demo.otf');
+  src: url('../fonts/Forever_Brush_Script_Demo.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -26,7 +45,7 @@ body {
   min-width: 320px;
   margin: 0 auto;
   display: -webkit-flex;
-  -webkit-flex-direction: column;
   display: flex;
+  -webkit-flex-direction: column;
   flex-direction: column;
 }
