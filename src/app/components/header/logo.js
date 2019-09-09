@@ -3,9 +3,12 @@ import React from 'react';
 export const Logo = props => {
     return (
         <div className="logo">
-            <h3 className={'logo__title'}>
-                {props.title}
-            </h3>
+            <a className={'logo__link'} href={'index.html'}>
+                <h3 className={'logo__title'}>
+                    {props.title}
+                </h3>
+            </a>
+
         </div>
     )
 };

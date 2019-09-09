@@ -20,9 +20,20 @@
     @media screen and (max-width: 1000px) {
       padding: 0;
     }
+    @media screen and (max-width: 600px) {
+      width: 80%;
+      padding: 0;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
   }
   &__item {
     margin: 0 25.1px;
+    @media screen and (max-width: 600px) {
+      width: 100%;
+      text-align: center;
+      margin: 0;
+    }
   }
   &__link {
     display: block;
@@ -32,6 +43,9 @@
     text-decoration: none;
     &_active, &:hover {
       color: #4cb1ca;
+      @media screen and (max-width: 600px) {
+        background-color: rgba(255, 255, 255, 0.25);
+      }
     }
   }
 }
