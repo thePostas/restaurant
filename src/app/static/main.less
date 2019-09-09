@@ -1,0 +1,32 @@
+@import url("./header/_header.less");
+
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url('../fonts/ProximaNova-Regular.eot');
+  src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova-Regular.woff') format('woff'),
+  url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font: 18px ProximaRegular, sans-serif;
+  color: #fff;
+}
+
+.wrapper {
+  max-width: 1600px;
+  min-width: 320px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}

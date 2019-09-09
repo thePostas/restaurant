@@ -1,0 +1,28 @@
+@import url("./_logo.less");
+@import url("./_navigation.less");
+
+@header-height: 145px;
+
+//Хеддер
+.header {
+  width: 100%;
+  height: 950px;
+  background: #202125 url("../../img/header_bg.jpg") no-repeat center center;
+  -webkit-background-clip: content-box;
+  background-clip: content-box;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  //Лого и навигация
+  &__top {
+    height: @header-height;
+    display: -webkit-flex;
+    display: flex;
+    @media screen and (max-width: 1000px) {
+      height: @header-height * 2;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+}

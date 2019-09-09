@@ -1,0 +1,37 @@
+//Навигация
+.navigation {
+  width: 76%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  &__list {
+    list-style: none;
+    display: -webkit-flex;
+    display: flex;
+    padding-right: 117px;
+    @media screen and (max-width: 1000px) {
+      padding: 0;
+    }
+  }
+  &__item {
+    margin: 0 25.1px;
+  }
+  &__link {
+    display: block;
+    padding: 10px 0;
+    font: 16px "Proxima Nova Regular", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    &_active, &:hover {
+      color: #4cb1ca;
+    }
+  }
+}
