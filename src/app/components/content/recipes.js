@@ -5,10 +5,10 @@ export const Recipes = props => {
         <section className={'recipes-block'}>
             <div className="recipes-block__inner">
                 <div className="recipes-block__inner-content">
-                    <h2 className="recipes-block__inner-content-title">
+                    <h2 className="recipes-block__inner-content-title main-content__title">
                         {props.title}
                     </h2>
-                    <p className="recipes-block__inner-content-text">
+                    <p className="recipes-block__inner-content-text main-content__text">
                         {props.text}
                     </p>
                 </div>

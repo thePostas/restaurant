@@ -1,2 +1,21 @@
 @import url('./_story.less');
 @import url('./_recipes.less');
+@import url('./_menu.less');
+
+//Контент
+.main-content {
+  &__title {
+    font: 56px "Forever Brush Script", sans-serif;
+    text-align: center;
+    position: relative;
+    text-transform: capitalize;
+  }
+  &__text {
+    margin-top: 46px;
+    text-align: center;
+    line-height: 32px;
+    @media screen and (max-width: 950px) {
+      padding: 0 20px;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 .recipes-block {
-  height: 481px;
+  min-height: 481px;
   background: #25262a url("../../img/recipe_bg.jpg") no-repeat center center;
   background-clip: content-box;
   &__inner {
@@ -12,16 +12,19 @@
     -webkit-align-items: center;
     align-items: center;
     &-content {
-      max-width: 508px;
+      max-width: 511px;
+      margin: 92px 0 25px 0;
+      box-sizing: border-box;
       &-title {
-        font: 56px "Forever Brush Script", sans-serif;
-        text-align: center;
-        position: relative;
-      }
-      &-text {
-        margin-top: 44px;
-        text-align: center;
-        line-height: 32px;
+        &:after {
+          position: absolute;
+          content: '';
+          width: 108px;
+          height: 2px;
+          background-color: #c8235d;
+          bottom: 0;
+          left: 39.5%;
+        }
       }
     }
   }

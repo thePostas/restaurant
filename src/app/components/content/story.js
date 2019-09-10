@@ -7,10 +7,10 @@ export const Story = props => {
             <div className="story-block__inner">
                 <img src={image} alt="image" className="story-block__inner-image" width={445} height={400}/>
                 <div className="story-block__inner-content">
-                    <h2 className="story-block__inner-content-title">
+                    <h2 className="story-block__inner-content-title main-content__title">
                         {props.title}
                     </h2>
-                    <p className="story-block__inner-content-text">
+                    <p className="story-block__inner-content-text main-content__text">
                         {props.text}
                     </p>
                 </div>
