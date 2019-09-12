@@ -1,5 +1,5 @@
 @background-color: #f3f4f7;
-
+//Блок меню ресторана
 .menu-block {
   display: -webkit-flex;
   display: flex;
@@ -12,6 +12,11 @@
   color: #0b0c0d;
   padding-top: 92px;
   max-height: 905px;
+  font-family: "Proxima Nova Regular", sans-serif;
+  @media screen and (max-width: 1200px) {
+    max-height: inherit;
+  }
+  //Внутренний блок меню
   &__inner {
     width: 75%;
     display: -webkit-flex;
@@ -19,10 +24,16 @@
     -webkit-flex-direction: column;
     flex-direction: column;
     max-height: 905px;
+    //Обертка заголовка и цены
+    @media screen and (max-width: 1450px) {
+      max-height: inherit;
+    }
+    //Заголовок
     &-title {
-      margin-bottom: 114px;
+      margin-bottom: 112px;
       color: #000;
     }
+    //Блок с флексами меню
     &-box {
       overflow: hidden;
       display: -webkit-flex;
@@ -30,15 +41,50 @@
       -webkit-flex-direction: column;
       flex-direction: column;
       -webkit-flex-wrap: wrap;
-      align-content: space-between;
       flex-wrap: wrap;
-      padding-left: 50px;
-      max-height: 536px;
+      -webkit-align-content: space-between;
+      align-content: space-between;
+      padding: 0 15px 0 47px;
+      max-height: 560px;
+      @media screen and (max-width: 1200px) {
+        -webkit-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        max-height: max-content;
+      }
     }
+    //Блюдо
     &-item {
       box-sizing: border-box;
-      margin-bottom: 60px;
-      width: 40%;
+      margin-bottom: 54px;
+      max-width: 43%;
+      &-wrapper {
+        font-size: 16px;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        @media screen and (max-width: 1200px) {
+          -webkit-flex-direction: column;
+          flex-direction: column;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+      }
+      //Цена
+      &-price {
+        color: #c8235d;
+        padding-right: 35px;
+        @media screen and (max-width: 1200px) {
+          padding-right: 0;
+        }
+      }
+      @media screen and (max-width: 1450px) {
+        text-align: center;
+        max-width: 33%;
+      }
+      @media screen and (max-width: 1200px) {
+        max-width: 90%;
+      }
       &-title {
         text-transform: uppercase;
         font-size: 16px;
@@ -46,6 +92,11 @@
       }
       &-text {
         font-size: 16px;
+        max-height: 40px;
+        overflow: hidden;
+        @media screen and (max-width: 1200px) {
+          max-height: inherit;
+        }
       }
     }
   }
