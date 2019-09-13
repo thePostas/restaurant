@@ -1,0 +1,30 @@
+.images-block {
+  background-color: #f3f4f7;
+  display: -webkit-flex;
+  display: flex;
+
+  @media screen and (max-width: 1600px) {
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  &__inner {
+    display: -webkit-flex;
+    display: flex;
+    overflow: auto;
+    @media screen and (max-width: 1600px) {
+      width: 960px;
+    }
+    @media screen and (max-width: 960px) {
+      width: 480px;
+    }
+    @media screen and (max-width: 480px) {
+      width: 320px;
+    }
+  }
+  &__image {
+    @media screen and (max-width: 480px) {
+      width: 320px;
+      height: 243px;
+    }
+  }
+}
