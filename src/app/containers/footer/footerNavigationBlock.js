@@ -15,10 +15,10 @@ export class FooterNavigationBlock extends Component {
             <div className="footer__navigation-block">
                 <h4 className={'footer__navigation-block-title'}>
                     {this.props.title}
-                    <ul className="footer__navigation-block-list">
-                        { links }
-                    </ul>
                 </h4>
+                <ul className="footer__navigation-block-list">
+                    { links }
+                </ul>
             </div>
         )
     }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { FooterLogo } from '../footer/footerLogo';
-import { FooterNavigation } from '../../containers/footer/footerNavigation'
+import { FooterNavigation } from '../../containers/footer/footerNavigation';
+import { Contacts } from '../../components/footer/contacts';
 
 const navigationInfo = [
     {
@@ -51,11 +52,18 @@ const navigationInfo = [
     }
 ];
 
+const contacts = [
+    '855-5564-65651',
+    'Address streets City',
+    'your.mail@domains.com'
+];
+
 export const FooterTop = () => {
   return (
       <div className="footer__top">
           <FooterLogo/>
           <FooterNavigation navigationInfo={navigationInfo}/>
+          <Contacts tel={contacts[0]} address={contacts[1]} email={contacts[2]}/>
       </div>
   )
 };

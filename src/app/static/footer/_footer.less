@@ -18,7 +18,7 @@
     //Заголовок
     &-title {
       font: 26px sans-serif;
-      margin-bottom: 44px;
+      margin-bottom: 42px;
     }
     //Текст
     &-text {
@@ -31,10 +31,29 @@
   &__navigation {
     display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding-left: 73px;
+    width: 43%;
     &-block {
+      padding-top: 4px;
+      width: 25%;
+      &-title {
+        font: 18px "Roboto Regular";
+        margin-bottom: 41px;
+      }
       &-list {
+        list-style: none;
         &-item {
-
+          margin-bottom: 12px;
+        }
+        &-link {
+          text-decoration: none;
+          color: #fff;
+          font: 14px "Roboto Regular";
+          &:hover {
+            color: #4cb1ca;
+          }
         }
       }
     }
