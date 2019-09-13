@@ -8,17 +8,17 @@ export class Navigation extends Component {
         };
     }
 
-    onClick(currentIndex) {
+    onClick = currentIndex => {
         const updatedLinks = this.props.navigationLinks.map((link, index)=> {
             link.active = index === currentIndex;
         });
         this.setState({navigationLinks: updatedLinks})
-    }
+    };
 
     render() {
         const links = this.props.navigationLinks.map((link, index) => {
             return (
-                <li
+                <li key={index}
                 className={'navigation__item'}
                 >
                     <a

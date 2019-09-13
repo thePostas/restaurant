@@ -52,8 +52,8 @@ export class MenuInner extends Component {
         }
     }
     render() {
-        const items = menuItems.map((item) => {
-            return <MenuItem title={item.title} text={item.text} price={item.price}/>
+        const items = menuItems.map((item, index) => {
+            return <MenuItem key={index} title={item.title} text={item.text} price={item.price}/>
         });
         return (
             <div className="menu-block__inner">

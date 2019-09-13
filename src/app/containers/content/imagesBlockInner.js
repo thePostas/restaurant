@@ -9,8 +9,8 @@ export class ImagesBlockInner extends Component {
     }
 
     render() {
-        const images = this.props.images.map((image) => {
-            return <img className={'images-block__image'} src={image} alt={'image'} width={480} height={365}/>
+        const images = this.props.images.map((image, index) => {
+            return <img key={index} className={'images-block__image'} src={image} alt={'image'} width={480} height={365}/>
         });
         return (
             <div className="images-block__inner">
@@ -19,3 +19,7 @@ export class ImagesBlockInner extends Component {
         )
     }
 }
+
+ImagesBlockInner.defaultProps = {
+  images: []
+};
