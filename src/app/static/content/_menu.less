@@ -11,12 +11,8 @@
   box-sizing: border-box;
   color: #0b0c0d;
   padding-top: 92px;
-  max-height: 905px;
   font-family: "Proxima Nova Regular", sans-serif;
   padding-bottom: 61px;
-  @media screen and (max-width: 1200px) {
-    max-height: inherit;
-  }
   //Внутренний блок меню
   &__inner {
     width: 75%;
@@ -39,19 +35,11 @@
       overflow: hidden;
       display: -webkit-flex;
       display: flex;
-      -webkit-flex-direction: column;
-      flex-direction: column;
       -webkit-flex-wrap: wrap;
       flex-wrap: wrap;
-      -webkit-align-content: space-between;
-      align-content: space-between;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
       padding: 0 15px 0 47px;
-      max-height: 560px;
-      @media screen and (max-width: 1200px) {
-        -webkit-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        max-height: max-content;
-      }
     }
     //Блюдо
     &-item {

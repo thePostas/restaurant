@@ -11,10 +11,24 @@
     display: flex;
     background-color: #25262a;
     padding: 80px 150px 80px 244px;
+    @media screen and (max-width: 1300px) {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      padding: 80px 18px;
+    }
   }
   //Логотип футера
   &__logo {
     width: 21%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    box-sizing: border-box;
+    @media screen and (max-width: 1300px) {
+      align-items: center;
+      text-align: center;
+    }
     //Заголовок
     &-title {
       font: 26px sans-serif;
@@ -35,9 +49,25 @@
     justify-content: space-between;
     padding-left: 73px;
     width: 43%;
+    box-sizing: border-box;
+    @media screen and (max-width: 600px) {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      -webkit-align-items: center;
+      align-items: center;
+      text-align: center;
+    }
     &-block {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      flex-direction: column;
       padding-top: 4px;
       width: 25%;
+      @media screen and (max-width: 1300px) {
+        align-items: center;
+        text-align: center;
+      }
       &-title {
         font: 18px "Roboto Regular";
         margin-bottom: 41px;
@@ -56,6 +86,49 @@
           }
         }
       }
+    }
+  }
+  //Блок с контактами
+  &__contacts {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 5px 0 0 43px;
+    box-sizing: border-box;
+    @media screen and (max-width: 1300px) {
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    &-title {
+      font: 18px "Roboto Regular";
+      margin-bottom: 41px;
+    }
+    &-item {
+      display: block;
+      background: url("../../img/spritesheet.png") no-repeat;
+      font: 14px "Roboto Regular";
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      padding-left: 35px;
+      margin-bottom: 15px;
+    }
+    &-telephone {
+      background-position: -5px -52px;
+    }
+    &-address {
+      background-position: -5px -5px;
+    }
+    &-email {
+      background-position: -5px -30px;
+    }
+  }
+  &__block {
+    @media screen and (max-width: 1300px) {
+      width: 100%;
+      padding: 15px;
     }
   }
 }

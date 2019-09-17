@@ -2,13 +2,13 @@ import React from 'react';
 
 export const Contacts = props => {
   return (
-      <div className="footer__contacts">
-          <h4>Contact Us</h4>
-          <a href={`tel:${ props.tel }`}>{ props.tel }</a>
-          <address>
+      <div className="footer__contacts footer__block">
+          <h4 className={'footer__contacts-title'}>Contact Us</h4>
+          <a className={'footer__contacts-telephone footer__contacts-item'} href={`tel:${ props.tel }`}>{ props.tel }</a>
+          <address className={'footer__contacts-address footer__contacts-item'}>
               { props.address }
           </address>
-          <a href={`mailto:${props.email}`}>{ props.email }</a>
+          <a className={'footer__contacts-email footer__contacts-item'} href={`mailto:${props.email}`}>{ props.email }</a>
       </div>
   )
 };

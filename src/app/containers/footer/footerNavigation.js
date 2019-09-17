@@ -12,7 +12,7 @@ export class FooterNavigation extends Component {
             return <FooterNavigationBlock title={info.title} links={info.links}/>
         });
         return (
-            <div className="footer__navigation">
+            <div className="footer__navigation footer__block">
                 { blocks }
             </div>
         )

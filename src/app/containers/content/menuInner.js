@@ -8,24 +8,14 @@ const menuItems = [
         price: '20$'
     },
     {
-        title:'bread board butter',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        price: '30$'
-    },
-    {
-        title:'sticky chipotle chicken',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        price: '26$'
-    },
-    {
-        title:'salt & papper calamari',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        price: '14$'
-    },
-    {
         title:'cluck & duck wings',
         text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         price: '18$'
+    },
+    {
+        title:'bread board butter',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        price: '30$'
     },
     {
         title:'beef & bone marrow bon bons',
@@ -33,9 +23,19 @@ const menuItems = [
         price: '2$'
     },
     {
+        title:'sticky chipotle chicken',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        price: '26$'
+    },
+    {
         title:'garlic king prawns',
         text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         price: '36$'
+    },
+    {
+        title:'salt & papper calamari',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        price: '14$'
     },
     {
         title:'antipasti plate',
