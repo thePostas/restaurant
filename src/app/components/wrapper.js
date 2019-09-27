@@ -1,14 +1,21 @@
 import React from 'react';
-import { Header } from './header/header';
-import { MainContent } from "./content/mainContent";
-import { Footer } from "./footer/footer";
+import { Route } from 'react-router-dom';
+import {Page} from "./page";
+import {Home} from "./home";
+import {Menu} from "./menu";
+import {Contacts} from "./contacts";
+import {About} from "./about";
+import {Faq} from "./faq";
 
-export const Wrapper = props => {
-  return (
-      <div className={'wrapper'}>
-          <Header/>
-          <MainContent/>
-          <Footer/>
-      </div>
-  )
+export const Wrapper = () => {
+    return (
+        <div className="wrapper">
+            <Route exact path={'/'} component={Home}/>
+            <Route path={'/about'} component={About}/>
+            <Route path={'/menu'} component={Menu}/>
+            <Route path={'/faq'} component={Faq}/>
+            <Route path={'/page'} component={Page}/>
+            <Route path={'/contacts'} component={Contacts}/>
+        </div>
+    )
 };
